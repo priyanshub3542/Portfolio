@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en" theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priyanshu's Portfolio Website</title>
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+  <div id="sidebar">
+    <div class="toggle-sidebar">
+      <i class="las la-bars"></i>
+    </div>
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="" />
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="#home" class="active inner-link">
+            <i class="las la-home"></i>
+            <span>Home</span>
+          </a>
+          <span>Home</span>
+        </li>
+        <li>
+          <a href="#about_me" class="inner-link">
+            <i class="las la-address-card"></i>
+            <span>Skills & Certifications</span>
+          </a>
+          <span>Skills & Certifications</span>
+        </li>
+        <li>
+          <a href="#my_resume" class="inner-link">
+            <i class="las la-file"></i>
+            <span>Education & Achievements</span>
+          </a>
+          <span>Education & Achievements</span>
+        </li>
+        <li>
+          <a href="#my_work" class="inner-link">
+            <i class="las la-briefcase"></i>
+            <span>My Projects</span>
+          </a>
+          <span>My Projects</span>
+        </li>
+        <li>
+          <a href="#testimonial" class="inner-link">
+            <i class="las la-comment-alt"></i>
+            <span>Testimonial</span>
+          </a>
+          <span>Activities & Interests</span>
+        </li>
+        <li>
+          <a href="#contact_me" class="inner-link">
+            <i class="las la-phone"></i>
+            <span>Contact Me</span>
+          </a>
+          <span>Contact Me</span>
+        </li>
+      </ul>
+    </nav>
+    <div class="toggle-mode">
+      <div class="outer" onclick="toggleMode()">
+        <div class="inner"></div>
+      </div>
+    </div>
+  </div>
+  <main>
+    <section id="home" class="active">
+      <div class="meteor-shower"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 info">
+            <img class="person-circle" src="assets/images/person-circle.jpeg" alt="person circle" />
+            <h1><span>I'm</span> Priyanshu,</h1>
+            <div class="field">
+              <h2></h2>
+            </div>
+            <p>
+              "I'm a Computer Science student with a focus on Full-Stack Web Development and Python programming. I enjoy
+              building scalable solutions, developing efficient applications, and creating seamless digital experiences.
+              My goal is to apply my skills to real-world projects and grow into a professional software developer."
+            </p>
+            <a class="btn-custom-blue" href="assets/files/myresume.pdf" download>Download Resume</a>
+            <div class="socials">
+              <ul>
+                <li>
+                  <a href="https://www.linkedin.com/in/priyanshu-bisht-57b493245/" target="_blank">
+                    <i class="lab la-linkedin-in"></i>
+                    <span>Linkedin</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/_.priyanshu_bisht___?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank">
+                    <i class="lab la-instagram"></i>
+                    <span>Instagram</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/priyanshub3542" target="_blank">
+                    <i class="lab la-github"></i>
+                    <span>Github</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://leetcode.com/u/priyanshub3542/" target="_blank">
+                    <i class="fa-solid fa-code"></i>
+                    <span>LeetCode</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 image">
+            <img class="person-home-img" src="assets/images/photohome.jpg" alt="person home" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about_me">
+      <div class="container">
+        <div class="row hero">
+          <div class="col-xxl-6 col-lg-4 image">
+            <img class="img-about-person" src="assets/images/person-about.jpg" alt="person about" />
+          </div>
+          <div class="col-xxl-6 col-lg-8 info">
+            <header class="has-bg">
+              <img src="assets/images/h1-bg.png" alt="h1 bg" />
+              <img src="assets/images/h1-bg-light.png" alt="h1 bg" />
+              <h1>About Me</h1>
+            </header>
+            <h2>Full-Stack Developer & Python Learner</h2>
+            <p>
+              I'm a Full-Stack Developer and good hands on Python language. As a Full-Stack Developer, I'm
+              proficient in HTML, CSS, JavaScript, and MERN.
+              <br />
+              This is my motto: "I am better than I was"
+            </p>
+            <div class="items">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6 ps-0">
+                    <div class="item">
+                      <span class="title">Name :</span>
+                      <span class="value">Priyanshu Bisht</span>
+                    </div>
+                    <div class="item">
+                      <span class="title">Age :</span>
+                      <span class="value">21</span>
+                    </div>
+                    <div class="item">
+                      <span class="title">Location :</span>
+                      <span class="value">Dehradun</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-7 ps-0">
+                    <div class="item">
+                      <span class="title">Years of experience :</span>
+                      <span class="value">Fresher</span>
+                    </div>
+                    <div class="item">
+                      <span class="title">Phone :</span>
+                      <span class="value">+91 6397982677</span>
+                    </div>
+                    <div class="item">
+                      <span class="title">E-mail:</span>
+                      <span class="value">bishtpriyanshu3542@gmail.com</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <a href="assets/files/LatestResume.pdf" class="btn-custom-blue" download>Download Resume</a>
+              <a href="#contact_me" class="btn-custom-dark inner-link">Message me</a>
+            </div>
+          </div>
+        </div>
+        <div class="row languages-skills">
+          <div class="col-lg-6 languages-key-skills">
+            <div class="languages">
+              <header class="custom">
+                <h2>Languages</h2>
+              </header>
+              <ul class="items">
+                <li class="item">
+                  <div class="info">
+                    <h3>Hindi</h3>
+                    <span class="level">Native</span>
+                  </div>
+                  <div class="rate">
+                    <span class="fill"></span>
+                    <span class="fill"></span>
+                    <span class="fill"></span>
+                    <span class="fill"></span>
+                    <span class="fill"></span>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="info">
+                    <h3>English</h3>
+                    <span class="level">Conversational</span>
+                  </div>
+                  <div class="rate">
+                    <span class="fill"></span>
+                    <span class="fill"></span>
+                    <span class="fill"></span>
+                    <span class="fill"></span>
+                    <span></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="key-skills">
+              <header class="custom">
+                <h2>Key Skills</h2>
+              </header>
+              <ul class="items">
+                <li class="item">
+                  <h3>Problem Solving</h3>
+                  <div class="rate">
+                    <span class="fill"></span>
+                    <span class="fill"></span>
+                    <span class="fill"></span>
+                    <span class="fill"></span>
+                    <span class="fill"></span>
+                  </div>
+                </li>
+                <li class="item">
+                  <h3>Team working</h3>
+                  <div class="rate">
+                    <span class="fill"></span>
+                    <span class="fill"></span>
+                    <span class="fill"></span>
+                    <span class="fill"></span>
+                    <span></span>
+                  </div>
+                </li>
+                <li class="item">
+                  <h3>Communication</h3>
+                  <div class="rate">
+                    <span class="fill"></span>
+                    <span class="fill"></span>
+                    <span class="fill"></span>
+                    <span class="fill"></span>
+                    <span></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 web-skills mt-5 mt-lg-0">
+            <header class="custom">
+              <h2>Technical Skills</h2>
+            </header>
+            <div class="container">
+              <div class="items row">
+                <div class="col-xl-4 col-sm-6 px-2">
+                  <div class="item">
+                    <img class="img-skills-c" src="assets/images/web skills/python.png" alt="html5" />
+                    <h3>Python</h3>
+                    <span class="year">DSA</span>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 px-2">
+                  <div class="item">
+                    <img class="img-skills-c" src="assets/images/web skills/html5.png" alt="css3" />
+                    <h3>HTML & CSS</h3>
+                    <span class="year">WebDev</span>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 px-2">
+                  <div class="item">
+                    <img src="assets/images/web skills/js.png" alt="bootstrap" />
+                    <h3>JavaScript</h3>
+                    <span class="year">WebDev</span>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-sm-6 px-2">
+                  <div class="item">
+                    <img src="assets/images/web skills/mern.png" alt="JavaScript" />
+                    <h3>MERN Stack</h3>
+                    <span class="year">Full-Stack</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="certificates">
+        <header class="custom">
+          <h2>My Certifications</h2>
+        </header>
+        <div class="items row justify-content-center">
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 item" id="certi">
+            <img class="img-certificates" src="assets/images/certifications/Aws.png" alt="certification" />
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 item" id="certi">
+            <img class="img-certificates" src="assets/images/certifications/coursera.png" alt="certification" />
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 item" id="certi">
+            <img class="img-certificates" src="assets/images/certifications/jpmorgan.png" alt="certification" />
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section id="my_resume">
+      <div class="text-center">
+        <header class="has-bg">
+          <img src="assets/images/h1-bg.png" alt="h1 bg" />
+          <img src="assets/images/h1-bg-light.png" alt="h1 bg" />
+          <h1>My Resume</h1>
+        </header>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 education">
+            <header class="custom">
+              <h2>Education</h2>
+            </header>
+            <div class="items">
+              <div class="item last">
+                <div class="icon">
+                  <i class="las la-university"></i>
+                </div>
+                <div class="box">
+                  <span class="year">2022 - Present</span>
+                  <h2 class="title">CSE Engineer's degree</h2>
+                  <p>Graphic Era Deemed To Be University</p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="icon">
+                  <i class="las la-university"></i>
+                </div>
+                <div class="box">
+                  <span class="year">2021 - 2022</span>
+                  <h2 class="title">Intermediate</h2>
+                  <p>P.P.J.Saraswati Vihar, Nainital</p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="icon">
+                  <i class="las la-university"></i>
+                </div>
+                <div class="box">
+                  <span class="year">2020 - 2021</span>
+                  <h2 class="title">High School</h2>
+                  <p>P.P.J.Saraswati Vihar, Nainital</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 experience">
+            <header class="custom">
+              <h2>Contest Rating</h2>
+            </header>
+            <div class="items">
+              <div class="item last">
+                <div class="icon">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="box">
+                  <span class="year">Sep 2024 - Present</span>
+                  <h2 class="title">Code Forces</h2>
+                </div>
+              </div>
+              <div class="item">
+                <div class="icon">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="box">
+                  <span class="year">Sep 2024 - Present</span>
+                  <h2 class="title">Leetcode</h2>
+
+                </div>
+              </div>
+              <div class="item">
+                <div class="icon">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="box">
+                  <span class="year">LeetCode</span>
+                  <h2 class="title">Data Structures and Algorithms</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="my_work">
+      <div class="text-center">
+        <header class="has-bg">
+          <img src="assets/images/h1-bg.png" alt="h1 bg" />
+          <img src="assets/images/h1-bg-light.png" alt="h1 bg" />
+          <h1>My Projects</h1>
+        </header>
+      </div>
+      <div class="filters">
+        <button data-group="all" class="active">
+          <h4>All</h4>
+        </button>
+        <button data-group="Web Developing">
+          <h4>Web Development</h4>
+        </button>
+        <button data-group="Video">
+          <h4>Management Softwares</h4>
+        </button>
+        <button data-group="SaaS">
+          <h4>SaaS</h4>
+        </button>
+
+      </div>
+      <div class="container">
+        <div class="row work-items">
+
+          <div class="col-sm-6 col-lg-4 item" data-groups='["SaaS"]'>
+            <div class="wrap" data-image="assets/images/works/2.png" data-title="Dentwise"
+              data-description="A full-stack application featuring an appointment booking system and email notifications. Built with Prisma and a responsive landing page using Clerk for authentication."
+              data-client="Priyanshu Bisht" data-completed="March 2026" data-skills="React, Next.js, Node.js, Prisma"
+              data-project-link="https://github.com/priyanshub3542/dentwise.git" target="_blank">
+              <img class="img-work-deg" src="assets/images/works/2.png" alt="Dentwise Project" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 item" data-groups='["Web Developing"]'>
+            <div class="wrap" data-image="assets/images/works/3.png" data-title="CivicConnect"
+              data-description="A full-stack web application designed to connect citizens with their local civic resources and community events."
+              data-client="Priyanshu Bisht" data-completed="2026" data-skills="Full Stack, MERN, React, Node.js"
+              data-project-link="https://github.com/priyanshub3542/CivicConnect.git" target="_blank">
+              <img class="img-work-deg" src="assets/images/works/3.png" alt="CivicConnect Project" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 item" data-groups='["Web Developing"]'>
+            <div class="wrap" data-image="assets/images/works/1.png" data-title="Self-Portfolio"
+              data-description="The project is a self-portfolio by Priyanshu Bisht, a designer who has been creating various pieces of work. The portfolio showcases my skills in print and web projects, user interfaces, self advertising, and more.I photographs his work myself to maintain creative control over how my work presented. I believes that great photography can make a design project look better in an online portfolio.(Not Responsive)"
+              data-client="Priyanshu Bisht" data-completed="May 25 2024" data-skills="HTML, CSS, Javascript"
+              data-project-link="https://drive.google.com/drive/u/1/folders/1E3uIlThIY5tYKDKsCXF4lRWFkVERrCz3">
+              <img class="img-work-deg" src="assets/images/works/1.png" alt="work" />
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 item" data-groups='["Video"]'>
+            <div class="wrap" data-image="assets/images/works/8.png" data-title="Bank Management System"
+              data-description="A banking management system is a computer-based system designed to handle the primary information required for various banking operations. It manages records related to accounts, customers, employees, and bank branches. The system allows for creating and maintaining customer account details, handling transactions like deposits, withdrawals, and transfers."
+              data-client="Priyanshu Bisht" data-completed="November 29 2024" data-skills="Python"
+              data-project-link="https://github.com/priyanshub3542/Bank-Management" target="_blank">
+              <img class="img-work-deg" src="assets/images/works/8.png" alt="work" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonial">
+      <div class="text-center">
+        <header class="has-bg">
+          <img src="assets/images/h1-bg.png" alt="h1 bg" />
+          <img src="assets/images/h1-bg-light.png" alt="h1 bg" />
+          <h1>Activities & Interests</h1>
+        </header>
+      </div>
+      <section class="main-section">
+        <div class="images">
+          <img src="assets/images/testimonials/1.png" alt="testimonial" />
+          <img src="assets/images/testimonials/2.png" alt="testimonial" />
+          <img src="assets/images/testimonials/3.png" alt="testimonial" class="active" />
+          <img src="assets/images/testimonials/4.png" alt="testimonial" />
+          <img src="assets/images/testimonials/5.png" alt="testimonial" />
+        </div>
+        <div class="comments">
+          <div class="item">
+            <div class="box">
+              <p>
+                <span>&lsquo;&lsquo;</span>
+                With every ride, I feel a rush of endorphins and a sense of
+                accomplishment that's hard to match. I'm always looking to
+                push my limits, try new routes, and explore hidden gems on two
+                wheels. Whether solo or with friends, cycling is a way for me
+                to unwind, recharge, and feel truly alive.
+                <span>&rsquo;&rsquo;</span>
+              </p>
+            </div>
+            <div class="writer">
+              <span class="name">Maximum Record</span>
+              <span class="field">89KM In One Day</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <p>
+                <span>&lsquo;&lsquo;</span>
+                I love the thrill of competition from school days, the
+                strategy, and the skill on display. But it's not just about
+                the game itself - it's about the camaraderie, the rivalries,
+                and the shared experience with fellows.
+                <span>&rsquo;&rsquo;</span>
+              </p>
+            </div>
+            <div class="writer">
+              <span class="name">National level winner and SGFI qualifier,</span>
+              <span class="field">January 2020</span>
+            </div>
+          </div>
+          <div class="item active">
+            <div class="box">
+              <p>
+                <span>&lsquo;&lsquo;</span>
+                As a dedicated exercise and bodybuilding enthusiast, I'm
+                passionate about pushing my physical limits and achieving a
+                healthy, balanced lifestyle. My fitness journey began in 2023,
+                and since then, I've been committed to regular exercise and a
+                nutritious diet.
+                <span>&rsquo;&rsquo;</span>
+              </p>
+            </div>
+            <div class="writer">
+              <span class="name">Interrmidiate,</span>
+              <span class="field">Daily Fitness Enthusiast</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <p>
+                <span>&lsquo;&lsquo;</span>
+                I believe that coding is not just about writing code, but
+                about solving real-world problems efficiently and effectively.
+                I'm committed to writing clean, readable, and well-documented
+                code that's easy to maintain and scale.
+                <span>&rsquo;&rsquo;</span>
+              </p>
+            </div>
+            <div class="writer">
+              <span class="name">Leetcode 500+ Solved Problems</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <p>
+                <span>&lsquo;&lsquo;</span>
+                Problem solving skill is really one of the toughest things to
+                achieve. It depends on time, patience, and hardwork of the
+                individual.
+                <span>&rsquo;&rsquo;</span>
+              </p>
+            </div>
+            <div class="writer">
+              <span class="name">LeetCode 300+ Solved Problems,</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="contact_me">
+      <div class="text-center">
+        <header class="has-bg">
+          <img src="assets/images/h1-bg.png" alt="h1 bg" />
+          <img src="assets/images/h1-bg-light.png" alt="h1 bg" />
+          <h1>Contact Me</h1>
+        </header>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 form">
+            <form action="https://api.web3forms.com/submit" method="post">
+              <input type="hidden" name="access_key" value="5b1ba2e9-e63a-4cd9-81d2-59e4ccd13200">
+              <div class="form-item">
+                <label>Name</label>
+                <input type="text" name="name" required />
+              </div>
+              <div class="form-item">
+                <label>Email</label>
+                <input type="email" name="email" required />
+              </div>
+              <div class="form-item">
+                <label>Subject</label>
+                <input type="text" name="subject" required />
+              </div>
+              <div class="form-item">
+                <label>Message</label>
+                <textarea name="message" required></textarea>
+              </div>
+              <div class="text-end">
+                <button type="submit" class="btn-custom-dark">
+                  Send message
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6 info">
+            <div class="item">
+              <i class="las la-phone"></i>
+              <div class="text">
+                <span class="title">Phone number:</span>
+                <a href="tel:+1234567890">+91 6397982677</a>
+              </div>
+            </div>
+            <div class="item">
+              <i class="las la-envelope"></i>
+              <div class="text">
+                <span class="title">Email:</span>
+                <a href="mailto:cheetah.academy.sp@gmail.com">bishtpriyanshu3542@gmail.com</a>
+              </div>
+            </div>
+            <div class="item">
+              <i class="las la-map-marker-alt"></i>
+              <div class="text">
+                <span class="title">Location:</span>
+                <p>
+                  Subhash Nagar, Dehradun,
+                  Uttarakhand - 248002.
+                </p>
+              </div>
+            </div>
+            <div class="copyright">
+              Created By Priyanshu Bisht. <br>All Copyright Reserved&#169;
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal fade" id="workModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="modal-close-button" data-bs-dismiss="modal" aria-label="Close">
+            <i class="las la-times"></i>
+          </button>
+          <img src="" alt="work" />
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-7 left">
+                <h2 class="title"></h2>
+                <p class="description"></p>
+              </div>
+              <div class="col-lg-5 right">
+                <div class="client mb-3">
+                  <i class="las la-user-alt"></i>
+                  <span class="title">Coder : </span>
+                  <span class="value"></span>
+                </div>
+                <div class="completed mb-3">
+                  <i class="lar la-calendar-check"></i>
+                  <span class="title">Completed On : </span>
+                  <span class="value"></span>
+                </div>
+                <div class="skills">
+                  <i class="las la-flask"></i>
+                  <span class="title">Skills : </span>
+                  <span class="value"></span>
+                </div>
+                <div class="project-link">
+                  <i class="las la-link"></i>
+                  <a href="">Project link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/6.0.0/shuffle.min.js"
+    integrity="sha512-fN+YeX/572qBnWu5Axj90DDyKjSNUfvR+8OaFkz27xnr+QE50vZHefJ+bplRrM284a8cJgMLxEipmKshf8vrug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
