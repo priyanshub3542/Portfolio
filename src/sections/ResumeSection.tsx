@@ -6,7 +6,7 @@ const ResumeSection: React.FC = () => {
   const handleDownloadPDF = useCallback(async () => {
     const img = new Image();
     img.crossOrigin = 'anonymous';
-    img.src = '/resume.png';
+    img.src = `${import.meta.env.BASE_URL}resume.png`;
 
     img.onload = () => {
       // A4 dimensions in mm
@@ -60,7 +60,7 @@ const ResumeSection: React.FC = () => {
         <FadeIn delay={0.15} y={30}>
           <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#0C0C0C]/10 group cursor-pointer" onClick={handleDownloadPDF}>
             <img
-              src="/resume.png"
+              src={`${import.meta.env.BASE_URL}resume.png`}
               alt="Priyanshu Bisht Resume"
               className="w-full h-auto transition-transform duration-500 group-hover:scale-[1.02]"
             />
