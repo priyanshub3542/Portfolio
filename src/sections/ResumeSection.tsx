@@ -58,11 +58,16 @@ const ResumeSection: React.FC = () => {
       <div className="max-w-4xl mx-auto flex flex-col items-center gap-10 sm:gap-14">
         {/* Resume Preview */}
         <FadeIn delay={0.15} y={30}>
-          <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#0C0C0C]/10 group cursor-pointer" onClick={handleDownloadPDF}>
+          <div
+            className="rounded-2xl overflow-hidden shadow-2xl border border-white/20 group cursor-pointer bg-white p-4"
+            onClick={handleDownloadPDF}
+            style={{ boxShadow: '0 0 60px rgba(255,255,255,0.15), 0 25px 50px rgba(0,0,0,0.5)' }}
+          >
             <img
               src={`${import.meta.env.BASE_URL}resume.jpg`}
               alt="Priyanshu Bisht Resume"
               className="w-full h-auto transition-transform duration-500 group-hover:scale-[1.02]"
+              style={{ imageRendering: 'auto' }}
             />
           </div>
         </FadeIn>
