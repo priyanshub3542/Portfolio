@@ -6,22 +6,16 @@ const education = [
     degree: 'Bachelor of Technology - Computer Science and Engineering',
     institution: 'Graphic Era Hill University, Dehradun, Uttarakhand, India',
     period: 'Aug 2022 - May 2026',
-    gradeType: 'CGPA',
-    grade: '6.5',
   },
   {
     degree: 'CBSE Board - Class XII',
     institution: 'Parwati Prema Jagati Saraswati Vihar, Nainital, Uttarakhand',
     period: 'May 2021 - Apr 2022',
-    gradeType: 'Score',
-    grade: '82%',
   },
   {
     degree: 'CBSE Board - Class X',
     institution: 'Parwati Prema Jagati Saraswati Vihar, Nainital, Uttarakhand',
     period: 'May 2019 - Apr 2020',
-    gradeType: 'Score',
-    grade: '88%',
   },
 ];
 
@@ -68,11 +62,6 @@ const EducationSection: React.FC = () => {
                 {edu.institution}
               </p>
               
-              <div className="mt-3">
-                <span className="inline-block px-5 py-2.5 rounded-lg text-base sm:text-lg font-semibold tracking-wider uppercase border border-[#D7E2EA]/20 text-[#D7E2EA] bg-[#D7E2EA]/5">
-                  {edu.gradeType}: {edu.grade}
-                </span>
-              </div>
             </div>
           </FadeIn>
         ))}

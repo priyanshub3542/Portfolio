@@ -6,22 +6,29 @@ const certifications = [
     provider: 'Google',
     title: 'Data Analysis with Python',
     source: 'Coursera',
-    description: 'Developed proficiency in exploratory data analysis (EDA), data cleaning, statistical analysis, and interactive visualizations on real-world datasets using Python, Pandas, NumPy, Matplotlib, and Seaborn.',
+    description: 'Performed data analysis and visualization on real-world datasets using Python.',
     image: 'google-cert.png',
-  },
-  {
-    provider: 'IBM',
-    title: 'Machine Learning with Python',
-    source: 'Coursera',
-    description: 'Mastered supervised and unsupervised machine learning algorithms including regression, classification, clustering, and predictive modeling. Built projects utilizing Scikit-Learn and related data libraries.',
-    image: 'ibm-cert.png',
   },
   {
     provider: 'Deloitte',
     title: 'Data Analytics Job Simulation',
     source: 'Forage',
-    description: 'Completed practical job-simulation tasks in data analysis and forensic technology. Analyzed data sets, drafted summaries of insights, and presented technical solutions mimicking real-world project deliveries.',
+    description: 'Completed practical tasks in Data Analysis and Forensic Technology, including data investigation, analysis, and business insights generation.',
     image: 'deloitte-cert.png',
+  },
+  {
+    provider: 'IBM',
+    title: 'Machine Learning with Python',
+    source: 'Coursera',
+    description: 'Gained knowledge of regression, classification, and predictive modeling using Python.',
+    image: 'ibm-cert.png',
+  },
+  {
+    provider: 'IBM',
+    title: 'Generative AI: Introduction and Applications',
+    source: 'Coursera',
+    description: 'Learned the fundamentals of Generative AI, LLMs, prompt engineering, AI applications, responsible AI, and practical business use cases.',
+    image: 'ibm-cert.png',
   },
 ];
 

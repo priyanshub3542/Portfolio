@@ -77,7 +77,7 @@ const AboutSection: React.FC = () => {
 
         <div className="gap-10 sm:gap-14 md:gap-16 flex flex-col items-center mt-10 sm:mt-14 md:mt-16 w-full">
           <AnimatedText
-            text="Data Analyst with hands-on expertise in Python, SQL, and Power BI, skilled in data cleaning, EDA, statistical analysis, ETL pipelines, and dashboard development to deliver actionable insights. Additional experience in Machine Learning, Deep Learning, Computer Vision, and NLP."
+            text="Data Analyst with hands-on expertise in Python, SQL, and Power BI, skilled in data cleaning, exploratory data analysis (EDA), statistical analysis, and dashboard development to deliver actionable business insights and support data-driven decision-making."
             className="font-bold text-center leading-relaxed w-full max-w-[1200px]"
             style={{ 
               fontSize: 'clamp(1.5rem, 3.5vw, 2.8rem)',

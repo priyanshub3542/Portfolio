@@ -6,7 +6,7 @@ const ResumeSection: React.FC = () => {
   const handleDownloadPDF = useCallback(async () => {
     const img = new Image();
     img.crossOrigin = 'anonymous';
-    img.src = `${import.meta.env.BASE_URL}resume.png`;
+    img.src = `${import.meta.env.BASE_URL}resume.jpg`;
 
     img.onload = () => {
       // A4 dimensions in mm
@@ -25,12 +25,12 @@ const ResumeSection: React.FC = () => {
 
       if (scaledHeight <= pdfHeight) {
         // Image fits on one page
-        pdf.addImage(img, 'PNG', 0, 0, pdfWidth, scaledHeight);
+        pdf.addImage(img, 'JPEG', 0, 0, pdfWidth, scaledHeight);
       } else {
         // Scale to fit page height
         const scaledWidth = pdfHeight / imgRatio;
         const xOffset = (pdfWidth - scaledWidth) / 2;
-        pdf.addImage(img, 'PNG', xOffset, 0, scaledWidth, pdfHeight);
+        pdf.addImage(img, 'JPEG', xOffset, 0, scaledWidth, pdfHeight);
       }
 
       // Open PDF in new tab
@@ -60,7 +60,7 @@ const ResumeSection: React.FC = () => {
         <FadeIn delay={0.15} y={30}>
           <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#0C0C0C]/10 group cursor-pointer" onClick={handleDownloadPDF}>
             <img
-              src={`${import.meta.env.BASE_URL}resume.png`}
+              src={`${import.meta.env.BASE_URL}resume.jpg`}
               alt="Priyanshu Bisht Resume"
               className="w-full h-auto transition-transform duration-500 group-hover:scale-[1.02]"
             />

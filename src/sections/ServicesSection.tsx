@@ -4,47 +4,28 @@ import FadeIn from '../components/FadeIn';
 const skillsData = [
   {
     number: '01',
-    category: 'Programming',
-    skills: ['Python', 'SQL'],
+    category: 'Data Analysis & Programming',
+    skills: ['Python (Pandas, NumPy)', 'SQL (JOINs, Aggregations, Subqueries, Window Functions)'],
   },
   {
     number: '02',
-    category: 'ML / DL Libraries',
-    skills: ['Scikit-Learn', 'TensorFlow', 'PyTorch', 'Statsmodels', 'OpenCV'],
+    category: 'Data Visualization',
+    skills: ['Power BI (DAX)', 'Tableau', 'Matplotlib', 'Seaborn', 'Excel (Pivot Tables, VLOOKUP, XLOOKUP, Dashboards)'],
   },
   {
     number: '03',
-    category: 'Data Libraries',
-    skills: ['Pandas', 'NumPy', 'Matplotlib', 'Seaborn'],
+    category: 'Data Engineering',
+    skills: ['Data Cleaning', 'Data Preprocessing', 'ETL Pipelines', 'Business Intelligence (BI)', 'Reporting Automation'],
   },
   {
     number: '04',
-    category: 'Visualization & BI',
-    skills: ['Power BI (DAX)', 'Tableau', 'Excel (Pivot Tables, VLOOKUP, XLOOKUP, Dashboards)'],
+    category: 'Database & Tools',
+    skills: ['PostgreSQL', 'MySQL', 'Git', 'GitHub', 'Jupyter Notebook', 'VS Code'],
   },
   {
     number: '05',
-    category: 'Databases',
-    skills: ['PostgreSQL', 'MySQL'],
-  },
-  {
-    number: '06',
-    category: 'Tools & Platforms',
-    skills: ['Git', 'GitHub', 'Docker', 'Jupyter Notebook', 'VS Code', 'Streamlit'],
-  },
-  {
-    number: '07',
-    category: 'Concepts',
-    skills: [
-      'Machine Learning',
-      'Deep Learning',
-      'NLP',
-      'Computer Vision',
-      'ETL Pipelines',
-      'RFM Segmentation',
-      'Time-Series Forecasting',
-      'Business Intelligence',
-    ],
+    category: 'AI & Productivity Tools',
+    skills: ['Chat-GPT', 'Antigravity', 'Google Gemini', 'Claude', 'GitHub Copilot'],
   },
 ];
 
